@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>school website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/adam-kring-j1RpMqas82o-unsplash.jpg" width="100px"></a>
+            <p>LUMEN</p>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="facility.html">FACILITY</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+
+
+        <div class="facilities-container">
+            <h2>Our Facilities</h2>
+            <ul>
+                <li>
+                    <img src="images/classroom.jpg" alt="">
+                    <p>Classrooms</p>
+                </li>
+                <li>
+                    <img src="images/library.jpg" alt="">
+                    <p>Library</p>
+                </li>
+                <li>
+                    <img src="images/sports 1.jpg" alt="">
+                    <p>Sports</p>
+                </li>
+                <li>
+                    <img src="images/class.jpg" alt="" width="600px">
+                    <p>Smart Classrooms</p>
+                </li>
+                <li>
+                    <img src="images/bus.jpg" alt="" width="600px">
+                    <p>Transporation</p>
+                </li>
+                <li>
+                    <img src="images/medical" alt="" width="600px">
+                    <p>Medical room</p>
+                </li>
+                <li>
+                    <img src="images/meeting.jpg" alt="" width="600px">
+                    <p>Parent-Teacher Meeting</p>
+                </li>
+                <li>
+                    <img src="images/wifi.jpg" alt="">
+                    <p>Wi-Fi access</p>
+                </li>
+                <li>
+                    <img src="images/ini1" alt="" width="600px">
+                    <p>Environmental initiatives</p>
+                </li>
+                <li>
+                    <img src="images/play.jpg" alt="" width="600px">
+                    <p>Play Areas</p>
+                </li>
+                <li>
+                    <img src="images/music1" alt="" width="600px">
+                    <p>Music room</p>
+                </li>
+                <li>
+                    <img src="images/lab1.jpg" alt="">
+                    <p>Computer Lab</p>
+                </li>
+                <li>
+                    <img src="images/audio" alt="" width="600px">
+                    <p>Auditorium</p>
+                </li>
+                <li>
+                    <img src="images/can.jpg" alt="">
+                    <p>Canteen</p>
+                </li>
+                <li>
+                    <img src="images/art.jpg" alt="" height="350px" width="600px">
+                    <p>Art studio</p>
+                </li>
+                <li>
+                    <img src="images/cctv.jpg" alt="" width="600px" height="300px">
+                    <p>Security Measures</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Copyright@2020Lumen.All rights reserved</p>
+    </section>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showmenu() {
+            navLinks.style.right = "0";
+        }
+        function hidemenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>

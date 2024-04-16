@@ -1,0 +1,530 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.header{
+min-height: 100vh;
+width: 100%;
+background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/banner.jpg);
+background-position: center;
+background-size: cover;
+position: relative;
+}
+nav{
+    display:flex;
+    padding:2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav p{
+    color:blueviolet;
+   font-size: 50px;
+    font-weight: bold;
+}
+  nav img{
+    border-radius: 100%;
+    width:100px;
+    padding:10px;
+    margin-right:5px;
+}
+
+.nav-links{
+    flex:1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display:inline-block;
+    padding: 18px 20px;
+    position: relative;
+}
+.nav-links ul li a{
+    color:white;
+    text-decoration: none;
+    font-size: 30px;
+    font-size: bold;
+}
+.nav-links ul li::after{
+    content:'';
+    width: 0%;
+    height: 2px;
+    background:blueviolet;
+    display:block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width:100%;
+}
+.text-box{
+    width:90%;
+    color:#fff;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+    margin-bottom: 30px;
+
+}
+.text-box p{
+    margin:10px 0 40px;
+    font-size: 30px;
+    color:white;
+    font-style: italic;
+   line-height: 1.5;
+}
+.btn{
+    display:inline-block;
+    text-decoration: none;
+    color:#fff;
+    border:1px solid #fff;
+    padding: 12px 34px;
+    font-size: 25px;
+    background:transparent;
+    position: relative;
+    cursor: pointer;
+}
+.btn:hover{
+    color:black;
+    background-color: blueviolet;
+    border:none;
+    font-size: 35px;
+    font-weight: bold;
+    transition:1s ;
+}
+nav .fa{
+    display:none;
+}
+#overview {
+    background-color: #f9f9f9;
+    padding: 20px;
+   font-size: 25px;
+}
+#overview h1 {
+    font-size:50px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#overview h2 {
+    color:blueviolet;
+    text-decoration-line:underline;
+    margin-bottom: 15px;
+}
+
+#overview p {
+    margin-bottom: 15px;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    font-family:sans-serif;
+}
+.image-container{
+    display:flex;
+    flex-wrap: wrap;
+  justify-content: center;
+}
+.image-container img{
+    width: 450px;
+    margin: 30px;
+    border:8px solid black;
+border-radius: 15px;
+}
+
+#academic-programs {
+    background-color: #f9f9f9;
+    padding: 20px;
+    font-size: 25px;
+}
+
+#academic-programs h2 {
+    color:blueviolet;
+    margin-bottom: 15px;
+    text-decoration-line:underline;
+}
+
+.program {
+    margin-bottom: 25px;
+    
+}
+
+.program h3 {
+    color: #333;
+    font-size:35px;
+    margin-bottom: 10px;
+}
+
+.program p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+    letter-spacing: 3px;
+    font-family:sans-serif;
+    
+}
+.image{
+    display:flex;
+    flex-wrap: wrap;
+  justify-content: center;
+}
+.image img{
+width: 450px;
+    margin: 30px;
+    border:8px solid black;
+border-radius: 15px;
+}
+.images{
+    display:flex;
+    flex-wrap: wrap;
+  justify-content: center;
+}
+.images img{
+    width: 450px;
+    margin: 30px;
+    border:8px solid black;
+border-radius: 15px; 
+}
+
+#faculty-staff {
+    background-color: #f9f9f9;
+    padding: 20px;
+    
+}
+
+#faculty-staff h2 {
+    color:blueviolet;
+    font-size: 60px;
+    margin-bottom: 15px;
+    text-decoration-line:underline;
+}
+
+.staff-member {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.staff-member img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-right: 20px;
+    
+}
+
+.staff-info h3 {
+    margin-bottom: 5px;
+    font-size: 50px;
+}
+
+.staff-info p {
+    margin-bottom: 3px;
+    font-size: 30px;
+}
+
+facilities-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+   
+}
+
+.facilities-container h2 {
+    font-size: 70px;
+    font-weight: bold;
+    color:blueviolet;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+ 
+}
+
+.facilities-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.facilities-container li {
+    width: calc(50% - 20px);
+    margin: 10px;
+    text-align: center;
+}
+.facilities-container img {
+    max-width: 100%;
+ height: auto;
+    border-radius: 8px;
+}
+
+.facilities-container p {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 40px;
+    color:white;
+
+}
+.contact-section {
+    background-color: #f9f9f9;
+    padding: 50px ;
+ 
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-section h2 {
+    color:blueviolet;
+    margin-bottom: 20px;
+    font-size: 70px;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 25px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color:black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 30px;
+}
+
+.contact-form button:hover {
+    background-color:blueviolet;
+color: white;
+}
+
+.footer {
+     width: 100%; 
+     text-align: center; 
+     padding: 30px 0; 
+     background-color: blueviolet;
+     font-size: 30px;
+    } 
+.fa{ 
+    color:white; 
+    margin: 0 13px; 
+    cursor: pointer;
+   padding: 18px 0;
+    
+} 
+.footer p{
+    font-size: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:700px) {
+
+   nav {
+         align-items: flex-start;
+        }
+        nav img{
+            align-items:flex-start;
+            
+         
+        } 
+        nav p{
+            align-items: flex-start;
+        font-size: 30px;
+        margin-left:-140px;
+        margin-right: 50px;
+        
+        }
+        .text-box p{
+            font-size: 20px;
+            margin-top: 3px;
+            font-family:italic;
+            }
+    .text-box h1{
+        margin-top: 50px;
+        font-size: 25px;
+        font-family: bold;
+}
+.nav-links ul li{
+    display: block;
+}
+.nav-links{
+    position: absolute;
+    background-color: blueviolet;
+    height: 100vh;
+    width:200px;
+    top: 0;
+    right: -200px;
+    text-align:left;
+    z-index: 2;
+   
+    transition: 1s;
+}
+nav .fa{
+    display:block;
+    color:#fff;
+    margin: 10px;
+    font-size: 22px;
+    cursor:pointer;
+}
+.nav-links ul{
+    padding: 20px;
+}
+#overview {
+    padding: 15px;
+    font-size: 20px;
+    }
+
+#overview h2 {
+    font-size: 22px;
+}
+.image-container img {
+    width: 300px;
+    margin: 20px;
+}
+
+#academic-programs {
+    padding: 15px;
+    font-size: 20px;
+}
+
+#academic-programs h2 {
+    font-size: 22px;
+}
+
+.program h3 {
+    font-size: 30px;
+}
+
+.program p {
+    font-size: 18px;
+}
+
+.image img {
+    width: 400px;
+    margin: 20px;
+}
+.images img{
+    width: 400px;
+    margin: 20px;
+}
+
+ #faculty-staff {
+    padding: 15px;
+}
+
+#faculty-staff h2 {
+    font-size: 40px;
+}
+
+.staff-member img {
+    width: 200px;
+    height: 200px;
+    margin-right: 15px;
+}
+
+ .staff-info h3 {
+    font-size: 35px;
+}
+
+.staff-info p {
+    font-size: 20px;
+}
+
+.facilities-container li {
+    width: calc(100% - 20px);
+ }
+
+ .facilities-container h2 {
+    font-size:40px;
+ }
+ .facilities-container p{
+    font-size: 30px;
+    color:white;
+ }
+ .container {
+    padding: 0 20px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    margin-bottom: 15px;
+}
+.footer p{
+    font-size:20px;
+}
+.footer{
+    font-size: 20px;
+}
+}
+
+
+
+    
+
+
+
+
+
